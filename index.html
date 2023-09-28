@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header data-test="header" class="page-header">
       <nav class="navigation">
 
         <a class="navigation-logo" href="#">
@@ -47,12 +47,13 @@
         </ul>
       </nav>
     </header>
-    <main class="main-page">
+    <main data-test="main" class="main-page">
       <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
-      <div class="main-hero">
+      <div data-test="hero" class="main-hero">
         <img src="#" alt="Приветствие Welcome to the gorgeous Sedona. Because the grand canyon sucks!">
       </div>
-      <section class="advantages">
+
+      <section data-test="advantages" class="advantages">
         <h2 class="advantages-title">Седона — небольшой городок в Аризоне,<br>
           заслуживающий большего!</h2>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -81,50 +82,50 @@
             <img src="#" alt="Вид на мост Дьявола в Седоне">
           </li>
         </ul>
-      </section>
-      <section class="services">
-        <h2 class="services-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+
+        <h2 class="advantages-service-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p>Опытный персонал и качественное обслуживание!</p>
-        <ul class="services-list">
-          <li class="services-item">
-            <h3 class="services-name">Жильё</h3>
-            <p class="services-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            <img class="services-item-logo" src="#" alt="Жилой дом">
+        <ul class="advantages-service-list">
+          <li class="advantages-service-item">
+            <h3 class="advantages-service-name">Жильё</h3>
+            <p class="advantages-service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <img class="advantages-service-item-logo" src="#" alt="Жилой дом">
           </li>
-          <li class="services-item">
-            <h3 class="services-name">Еда</h3>
-            <p class="services-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-            <img class="services-item-logo" src="#" alt="Гамбургер">
+          <li class="advantages-service-item">
+            <h3 class="advantages-service-name">Еда</h3>
+            <p class="advantages-service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <img class="advantages-service-item-logo" src="#" alt="Гамбургер">
           </li>
-          <li class="services-item">
-            <h3 class="services-name">Сувениры</h3>
-            <p class="services-description">Не только китайского, но и настоящего местного производства!</p>
-            <img class="services-item-logo" src="#" alt="Завернутый подарок">
+          <li class="advantages-service-item">
+            <h3 class="advantages-service-name">Сувениры</h3>
+            <p class="advantages-service-description">Не только китайского, но и настоящего местного производства!</p>
+            <img class="advantages-service-item-logo" src="#" alt="Завернутый подарок">
           </li>
         </ul>
       </section>
 
-      <section class="hotel-search">
+      <section data-test="search" class="hotel-search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
         <p class="hotel-search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
           предложения гостиниц в Седоне</p>
         <a class="hotel-search-button" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
 
-      <section class="subscription">
+      <section data-test="subscribe" class="subscription">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscription-email">
             Email
           </label>
-          <input class="field" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
+          <input class="field" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail"
+            required>
           <button class="subscription-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer data-test="footer" class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
