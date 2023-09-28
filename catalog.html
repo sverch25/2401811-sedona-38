@@ -43,7 +43,7 @@
             </a>
           </li>
         </ul>
-          <button class="button" type="button">ХОЧУ СЮДА!</button>
+        <button class="button" type="button">ХОЧУ СЮДА!</button>
       </nav>
     </header>
 
@@ -120,21 +120,25 @@
       </section>
 
       <section data-test="catalog" class="catalog-search">
-        <h2 class="catalog-search-title">Найдено гостиниц: 38</h2>
-        <select class="catalog-search-select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <a href="#" class="button current-button">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="#" class="button">
-          <span class="visually-hidden">Показать галерею</span>
-        </a>
-        <a href="#" class="button">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <div>
+          <span>Найдено гостиниц: <i>38</i></span>
+        </div>
+        <div>
+          <select class="catalog-search-select-control" aria-label="Сортировка">
+            <option value="popular">Сначала популярное</option>
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <a href="#" class="button current-button">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a href="#" class="button">
+            <span class="visually-hidden">Показать галерею</span>
+          </a>
+          <a href="#" class="button">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
 
         <ul class="product-list">
           <li class="product-card">
@@ -240,7 +244,8 @@
           <label class="visually-hidden" for="subscription-email">
             Email
           </label>
-          <input class="field" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
+          <input class="field" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail"
+            required>
           <button class="subscription-button" type="submit">Подписаться</button>
         </form>
       </section>
