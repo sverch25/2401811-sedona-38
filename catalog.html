@@ -39,12 +39,11 @@
               <span class="visually-hidden">
                 Избранное
               </span>
+              <span>12</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">ХОЧУ СЮДА!</a>
-          </li>
         </ul>
+        <button class="button" type="button">ХОЧУ СЮДА!</button>
       </nav>
     </header>
 
@@ -121,21 +120,25 @@
       </section>
 
       <section data-test="catalog" class="catalog-search">
-        <h2 class="catalog-search-title">Найдено гостиниц: 38</h2>
-        <select class="catalog-search-select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <a href="#" class="button current-button">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="#" class="button">
-          <span class="visually-hidden">Показать галерею</span>
-        </a>
-        <a href="#" class="button">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <div>
+          <span>Найдено гостиниц: <i>38</i></span>
+        </div>
+        <div>
+          <select class="catalog-search-select-control" aria-label="Сортировка">
+            <option value="popular">Сначала популярное</option>
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <a href="#" class="button current-button">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a href="#" class="button">
+            <span class="visually-hidden">Показать галерею</span>
+          </a>
+          <a href="#" class="button">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
 
         <ul class="product-list">
           <li class="product-card">
@@ -143,10 +146,14 @@
               <img class="product-card-image" src="#" alt="Вид на звездное небо из каньона">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
-            <span class="product-card-type">Гостиница</span>
-            <span class="product-card-price">От 4000 ₽</span>
-            <a href="#" class="product-card-button-info">подробнее</a>
-            <button class="product-card-button-favourite" type="button">в избранное</button>
+            <div>
+              <span class="product-card-type">Гостиница</span>
+              <span class="product-card-price">От <i>4000</i> ₽</span>
+            </div>
+            <div>
+              <a href="#" class="product-card-button-info">подробнее</a>
+              <button class="product-card-button-favourite" type="button">в избранное</button>
+            </div>
             <div class="rating-result">
               <span class="rating-active"></span>
               <span class="rating-active"></span>
@@ -241,7 +248,8 @@
           <label class="visually-hidden" for="subscription-email">
             Email
           </label>
-          <input class="field" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
+          <input class="field" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail"
+            required>
           <button class="subscription-button" type="submit">Подписаться</button>
         </form>
       </section>
