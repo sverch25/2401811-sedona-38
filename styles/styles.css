@@ -79,11 +79,11 @@ li {
 }
 
 .navigation-search::before {
-  content: url("/images/navigation-user-search.svg");
+  content: url("../images/navigation-user-search.svg");
 }
 
 .navigation-favourite::before {
-  content: url("/images/navigation-user-like.svg");
+  content: url("../images/navigation-user-like.svg");
 }
 
 span.amount-likes-navigation-user {
@@ -111,7 +111,7 @@ span.amount-likes-navigation-user {
 }
 
 .hero {
-  background-image: url("/images/hero-background.jpg");
+  background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
   background-color: #000000;
   background-size: cover;
@@ -211,11 +211,11 @@ span.amount-likes-navigation-user {
 }
 
 .advantages-list-service li:first-child::before {
-  content: url("/images/advantage-icon-house.svg");
+  content: url("../images/advantage-icon-house.svg");
 }
 
 .advantages-list-service li:last-child::before {
-  content: url("/images/advantage-icon-gift.svg");
+  content: url("../images/advantage-icon-gift.svg");
 }
 
 .advantages-list-service .advantages-item {
@@ -238,7 +238,7 @@ span.amount-likes-navigation-user {
 }
 
 .advantages-list-service .advantages-item::before {
-  content: url("/images/advantage-icon-burger.svg");
+  content: url("../images/advantage-icon-burger.svg");
 }
 
 .hotel-search {
@@ -264,7 +264,7 @@ span.amount-likes-navigation-user {
 }
 
 .subscription {
-  background-image: url("/images/subscribe-background.jpg");
+  background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
