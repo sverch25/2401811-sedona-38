@@ -41,6 +41,11 @@ li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .navigation-menu li {
   list-style-type: none;
 }
@@ -274,6 +279,7 @@ span.amount-likes-navigation-user {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: #fff
 }
 
 .subscription-title {
@@ -281,13 +287,11 @@ span.amount-likes-navigation-user {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  color: #fff;
 }
 
 .subscription-description {
   font-size: 22px;
   line-height: 26px;
-  color: #fff;
 }
 
 input[type="email"] {
@@ -297,4 +301,61 @@ input[type="email"] {
   align-items: center;
   gap: 260px;
   align-self: stretch;
+  width: 452px;
+}
+
+.subscription-button {
+  background-color: #82B3D3;
+  border-radius: 0 4px 4px 0;
+  color: #fff;
+  display: inline-flex;
+  padding: 8px 50px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.page-footer {
+  display: flex;
+  min-width: 300px;
+  height: 120px;
+  padding: 40px 70px 30px 70px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+ul.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-end;
+  align-content: stretch;
+  align-items: baseline;
+}
+
+.footer-social-list .footer-social-item-vk::before {
+  content: url("/images/social-vk.svg");
+}
+
+.footer-social-list .footer-social-item-tg::before {
+  content: url("/images/social-tg.svg");
+}
+
+.footer-social-list .footer-social-item-youtube::before {
+  content: url("/images/social-youtube.svg");
+}
+
+.footer-social-logo::before {
+  content: url("/images/footer-logo-academy.svg");
+}
+
+.subscription-form {
+  display: flex;
 }
