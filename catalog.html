@@ -128,26 +128,32 @@
         </form>
       </section>
 
-      <section data-test="catalog" class="catalog-search">
+      <section class="catalog-search">
         <h2 class="visually-hidden">Результат применённых фильтров</h2>
         <div class="catalog-search-result-title">
           <span>Найдено гостиниц: <span>38</span></span>
-        </div>
-        <div>
           <select class="catalog-search-select-control" aria-label="Сортировка">
             <option value="popular">Сначала популярное</option>
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <a href="#" class="show-cards-button">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a href="#" class="show-slides-button">
-            <span class="visually-hidden">Показать галерею</span>
-          </a>
-          <a href="#" class="show-list-button">
-            <span class="visually-hidden">Показать список</span>
-          </a>
+          <ul class="show-mode-list">
+            <li class="show-mode-item">
+              <a href="#" class="show-cards-button">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+            </li>
+            <li class="show-mode-item">
+              <a href="#" class="show-slides-button">
+                <span class="visually-hidden">Показать галерею</span>
+              </a>
+            </li>
+            <li class="show-mode-item">
+              <a href="#" class="show-list-button">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </li>
+          </ul>
         </div>
 
         <ul class="product-list">

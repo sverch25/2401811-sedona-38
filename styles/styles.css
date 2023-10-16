@@ -123,6 +123,10 @@ span.amount-likes-navigation-user {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 371px;
+  padding-right: 371px;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .advantages-title {
@@ -450,33 +454,6 @@ a.breadcrumbs-link {
   padding: 14px 20px;
 }
 
-.show-cards-button {
-  padding: 14px 12px;
-  margin-right: 8px;
-  border: 2px solid #000;
-  background-color: transparent;
-  background-image: url(../images/view-mode-icon.svg);
-  background-repeat: no-repeat;
-}
-
-.show-slides-button {
-  padding: 14px 12px;
-  margin-right: 8px;
-  border: 2px solid #000;
-  background-color: transparent;
-  background-image: url(../images/view-mode-icon-gallery.svg);
-  background-repeat: no-repeat;
-}
-
-.show-list-button {
-  padding: 14px 12px;
-  margin-right: 8px;
-  border: 2px solid #000;
-  background-color: transparent;
-  background-image: url(../images/view-mode-icon-spisok.svg);
-  background-repeat: no-repeat;
-}
-
 .product-card-title {
   font-size: 24px;
   line-height: 28px;
@@ -553,4 +530,30 @@ a.breadcrumbs-link {
   background-color: #82B3D3;
   color: #fff;
   border-radius: 4px;
+}
+
+.show-cards-button::after {
+  content: url("../images/view-mode-icon.svg");
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.show-slides-button::after {
+  content: url("../images/view-mode-icon-gallery.svg");
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.show-list-button::after {
+  content: url("../images/view-mode-icon-spisok.svg");
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.show-mode-item a {
+  display: flex;
+  flex-direction: column;
 }
