@@ -120,8 +120,10 @@ span.amount-likes-navigation-user {
   background-repeat: no-repeat;
   background-color: #000000;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .advantages-title {
   text-align: center;
@@ -302,6 +304,9 @@ input[type="email"] {
   gap: 260px;
   align-self: stretch;
   width: 452px;
+  border: none;
+  border-top-left-radius: 4px;
+  border-end-start-radius: 4px;
 }
 
 .subscription-button {
