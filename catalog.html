@@ -53,19 +53,17 @@
     </header>
 
     <main data-test="main" class="main-catalog">
-      <header class="catalog-header">
+
+      <section class="catalog-filter">
         <h1 class="catalog-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html"></a>
+          <li class="breadcrumbs-item-home">
+            <a class="breadcrumbs-link" hred="index.html"></a>
           </li>
-          <li class=" breadcrumbs-item">
+          <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-      </header>
-
-      <section data-test="filter" class="catalog-filter">
         <h2 class="visually-hidden">Блок с фильтрами для гостиниц</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
 
@@ -132,8 +130,8 @@
 
       <section data-test="catalog" class="catalog-search">
         <h2 class="visually-hidden">Результат применённых фильтров</h2>
-        <div>
-          <span>Найдено гостиниц: <i>38</i></span>
+        <div class="catalog-search-result-title">
+          <span>Найдено гостиниц: <span>38</span></span>
         </div>
         <div>
           <select class="catalog-search-select-control" aria-label="Сортировка">
@@ -141,19 +139,14 @@
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <a href="#" class="button current-button">
+          <a href="#" class="show-cards-button">
             <span class="visually-hidden">Показать карточки</span>
-            <img class="view-mode-icon" src="images/view-mode-icon.svg" alt="Иконка карточки" width="16" height="14">
           </a>
-          <a href="#" class="button">
+          <a href="#" class="show-slides-button">
             <span class="visually-hidden">Показать галерею</span>
-            <img class="view-mode-icon" src="images/view-mode-icon-gallery.svg" alt="Иконка галереи" width="16"
-              height="14">
           </a>
-          <a href="#" class="button">
+          <a href="#" class="show-list-button">
             <span class="visually-hidden">Показать список</span>
-            <img class="view-mode-icon" src="images/view-mode-icon-spisok.svg" alt="Иконка списка" width="16"
-              height="14">
           </a>
         </div>
 
@@ -181,7 +174,7 @@
               <span class="rating-active"></span>
               <span></span>
             </div>
-            <a class="product-card-button-rating" href="#">Рейтинг: <i>8,5</i></a>
+            <a class="product-card-button-rating" href="#">Рейтинг: <span>8,5</span></a>
           </li>
           <li class="product-card">
             <a href="#" class="product-card-link">
@@ -206,7 +199,7 @@
               <span class="rating-active"></span>
               <span></span>
             </div>
-            <a class="product-card-button-rating" href="#">Рейтинг: <i>9,2</i></a>
+            <a class="product-card-button-rating" href="#">Рейтинг: <span>9,2</span></a>
           </li>
           <li class="product-card">
             <a href="#" class="product-card-link">
@@ -231,7 +224,7 @@
               <span></span>
               <span></span>
             </div>
-            <a class="product-card-button-rating" href="#">Рейтинг: <i>6,9</i></a>
+            <a class="product-card-button-rating" href="#">Рейтинг: <span>6,9</span></a>
           </li>
           <li class="product-card">
             <a href="#" class="product-card-link">
@@ -256,7 +249,7 @@
               <span></span>
               <span></span>
             </div>
-            <a class="product-card-button-rating" href="#">Рейтинг: <i>5,0</i></a>
+            <a class="product-card-button-rating" href="#">Рейтинг: <span>5,0</span></a>
           </li>
         </ul>
 
