@@ -37,6 +37,47 @@ body {
   background-color: #f2f2f2;
 }
 
+.navigation-logo {
+  margin-left: 70px;
+  display: block;
+  margin-bottom: -6px;
+  position: relative;
+  z-index: 2;
+}
+
+.navigation-menu {
+  display: flex;
+}
+
+.navigation-item {
+  margin-top: 0;
+  padding: 20px 16px;
+
+}
+
+.navigation-user {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0;
+}
+
+.navigation-user .navigation-item {
+  padding: 22px 12px;
+  margin: 0;
+}
+
+ul.navigation-list {
+  margin-left: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 0;
+  padding-left: 0;
+}
+
 .page-container {
   width: 1200px;
   margin: 0 auto;
@@ -70,7 +111,6 @@ a {
 }
 
 .button {
-  display: inline-flex;
   color: #fff;
   text-transform: uppercase;
   background-color: #756157;
@@ -78,6 +118,7 @@ a {
   font-weight: 700;
   padding: 8px 50px;
   border-radius: 4px;
+  display: flex;
 }
 
 .hotel-search-button {
@@ -88,6 +129,7 @@ a {
 .nav-button {
   font-size: 16px;
   line-height: 20px;
+  margin-left: 20px;
 }
 
 .navigation-search::before {
@@ -156,14 +198,12 @@ span.amount-likes-navigation-user {
   background-color: #82B3D3;
   padding: 103px 85px;
   color: #fff;
-  align-items: center;
-  width: 400px;
-  height: 385px;
+  width: 230px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  gap: 10px;
+  align-items: center;
 }
 
 .advantages-list li:first-child .advantages-name,
@@ -171,20 +211,19 @@ span.amount-likes-navigation-user {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  width: 400px;
   text-transform: uppercase;
 }
 
 .advantages-list li:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.20);
   padding: 103px 85px;
-  align-items: center;
-  width: 400px;
-  height: 385px;
+  width: 230px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  gap: 10px;
+  align-items: center;
 }
 
 .advantages-list li:nth-child(3) .advantages-name {
@@ -194,17 +233,20 @@ span.amount-likes-navigation-user {
   text-transform: uppercase;
 }
 
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 .advantages-list .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
   padding: 103px 85px;
-  align-items: center;
-  width: 400px;
-  height: 385px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
-  gap: 10px;
+  width: 230px;
 }
 
 .advantages-list .advantages-name {
@@ -219,8 +261,7 @@ span.amount-likes-navigation-user {
   background-color: rgba(131, 179, 211, 0.12);
   padding: 80px 85px;
   align-items: center;
-  width: 400px;
-  height: 385px;
+  width: 230px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -239,13 +280,59 @@ span.amount-likes-navigation-user {
 .advantages-list-service .advantages-item {
   padding: 80px 85px;
   align-items: center;
-  width: 400px;
-  height: 385px;
+  width: 230px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   gap: 10px;
+}
+
+.advantages-text-wrapper {
+  padding-top: 69px;
+  padding-bottom: 69px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-text-wrapper .advantages-title {
+  width: 620px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.advantages-text-wrapper .advantages-text {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.advantages-services-text-wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-services-text-wrapper .advantages-text {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.advantages-services-text-wrapper .advantages-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 505px;
+}
+
+.advantages-list-service {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0;
 }
 
 .advantages-list-service .advantages-name {
