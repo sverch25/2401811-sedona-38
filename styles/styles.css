@@ -152,7 +152,7 @@ span.amount-likes-navigation-user {
 }
 
 .advantages-list li:first-child,
-.advantages-list li:nth-child(6) {
+.advantages-list li:last-child {
   background-color: #82B3D3;
   padding: 103px 85px;
   color: #fff;
@@ -167,14 +167,14 @@ span.amount-likes-navigation-user {
 }
 
 .advantages-list li:first-child .advantages-name,
-.advantages-list li:nth-child(6) .advantages-name {
+.advantages-list li:last-child .advantages-name {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
 }
 
-.advantages-list li:nth-child(4) {
+.advantages-list li:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.20);
   padding: 103px 85px;
   align-items: center;
@@ -187,7 +187,7 @@ span.amount-likes-navigation-user {
   gap: 10px;
 }
 
-.advantages-list li:nth-child(4) .advantages-name {
+.advantages-list li:nth-child(3) .advantages-name {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
