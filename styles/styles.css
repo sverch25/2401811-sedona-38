@@ -522,6 +522,10 @@ a.breadcrumbs-link {
   margin-top: 16px;
 }
 
+.button-active-favourite {
+  background-color: #7DB54F;
+}
+
 .pagination {
   display: flex;
   gap: 8px;
