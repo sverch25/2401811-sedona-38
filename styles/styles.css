@@ -27,6 +27,10 @@
   overflow: hidden;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   margin: 0;
@@ -35,47 +39,39 @@ body {
   font-weight: 400;
   color: #333;
   background-color: #f2f2f2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .navigation-logo {
+  width: 140px;
+  margin-right: 28px;
   margin-left: 70px;
-  display: block;
   margin-bottom: -6px;
   position: relative;
   z-index: 2;
 }
 
-.navigation-menu {
-  display: flex;
-}
-
-.navigation-item {
-  margin-top: 0;
-  padding: 20px 16px;
-
-}
-
-.navigation-user {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 0;
-}
-
-.navigation-user .navigation-item {
-  padding: 22px 12px;
-  margin: 0;
-}
-
-ul.navigation-list {
-  margin-left: 30px;
+.navigation {
+  width: 1200px;
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
-  align-items: center;
-  text-align: center;
-  gap: 0;
-  padding-left: 0;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 339px;
+}
+
+.navigation-user {
+  margin-left: auto;
+  margin-right: 70px;
+  margin-bottom: 14px;
+  padding: 0;
 }
 
 .page-container {
