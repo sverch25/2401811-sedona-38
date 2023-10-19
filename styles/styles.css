@@ -179,17 +179,26 @@ span.amount-likes-navigation-user {
   text-align: center;
 }
 
+.advantages-description {
+  width: 230px;
+  margin-bottom: 0;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .advantages-list li:first-child,
 .advantages-list li:last-child {
   background-color: #82B3D3;
-  padding: 103px 85px;
   color: #fff;
-  width: 230px;
-  text-align: center;
+  width: 1200px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.advantages-wrapper-with-photo {
+  margin: auto;
 }
 
 .advantages-list li:first-child .advantages-name,
@@ -197,8 +206,12 @@ span.amount-likes-navigation-user {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  width: 400px;
   text-transform: uppercase;
+  width: 175px;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .advantages-list li:nth-child(3) {
@@ -206,10 +219,6 @@ span.amount-likes-navigation-user {
   padding: 103px 85px;
   width: 230px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .advantages-list li:nth-child(3) .advantages-name {
@@ -217,13 +226,18 @@ span.amount-likes-navigation-user {
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
+  width: 175px;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
+  display: flex;
 }
 
 .advantages-list .advantages-item {
@@ -238,6 +252,19 @@ span.amount-likes-navigation-user {
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
+  width: 175px;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages-list .advantages-name::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.30);
+  margin-top: 30px;
 }
 
 .advantages-list-service li:first-child,
@@ -441,9 +468,10 @@ span.amount-likes-navigation-user {
 
 .footer-social-list {
   margin-left: 70px;
-  display:flex;
+  display: flex;
   gap: 20px;
   width: 142px;
+  padding-left: 0;
 }
 
 .footer-social-logo {
