@@ -201,6 +201,10 @@ span.amount-likes-navigation-user {
   margin: auto;
 }
 
+.reverse {
+  flex-direction: row-reverse;
+}
+
 .advantages-list li:first-child .advantages-name,
 .advantages-list li:last-child .advantages-name {
   font-size: 24px;
@@ -276,8 +280,6 @@ span.amount-likes-navigation-user {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  gap: 10px;
 }
 
 .advantages-list-service li:first-child::before {
@@ -295,7 +297,6 @@ span.amount-likes-navigation-user {
   width: 230px;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
 }
 
 .advantages-list-service .advantages-name {
@@ -306,6 +307,7 @@ span.amount-likes-navigation-user {
 .advantages-list-service .advantages-description {
   margin-top: 0;
   margin-bottom: 0;
+  width: 230px;
 }
 
 .advantages-text-wrapper {
