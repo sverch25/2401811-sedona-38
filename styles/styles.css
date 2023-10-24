@@ -584,8 +584,12 @@ span.amount-likes-navigation-user {
 a.breadcrumbs-link {
   color: #fff;
   font-size: 16px;
-  min-width: 13px;
+}
+
+a.breadcrumbs-link::before{
+  content: url("../images/Vector.svg");
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 .breadcrumbs {
@@ -596,13 +600,7 @@ a.breadcrumbs-link {
   margin-bottom: 40px;
 }
 
-
-.breadcrumbs-item::before {
-  content: url(../images/breadcrumbs-vector.svg);
-  margin-left: 10px;
-}
-
-.breadcrumbs-item-home::before {
+.breadcrumbs-item-home {
   content: url("../images/breadcrumbs-house.svg");
 }
 
@@ -753,8 +751,24 @@ a.breadcrumbs-link {
   text-transform: uppercase;
   background-color: #F2F2F2;
   border-radius: 4px;
-  margin-top: 16px;
+  padding: 9px 22px 8px 23px;
+  margin-right: 20px;
+  margin-left: auto;
 }
+
+.rating-result {
+  margin-top: 16px;
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.rating-active {
+  content: url("../images/star-rating.svg");
+  margin-right: 6px;
+}
+
+
 
 .button-active-favourite {
   background-color: #7DB54F;
@@ -781,6 +795,7 @@ a.breadcrumbs-link {
   align-items: center;
   width: 60px;
   height: 60px;
+  border-radius: 4px;
 }
 
 .pagination-link.pagination-current {
