@@ -529,6 +529,45 @@ span.amount-likes-navigation-user {
 
 .catalog-filter-form {
   display: flex;
+  align-items: flex-end;
+}
+
+.catalog-filter-group-infra {
+  border: none;
+  padding: 0;
+  margin-right: 70px;
+}
+
+.catalog-filter-group-living {
+  border: none;
+  padding: 0;
+  text-align: left;
+}
+
+.catalog-filter-group-price {
+  display: flex;
+  align-self: flex-start;
+  text-align: left;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.price-min,
+.price-max {
+  width: 143px;
+  margin-top: 32px;
+}
+
+.catalog-filter-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 32px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .breadcrumbs-title-wrapper {
@@ -539,7 +578,6 @@ span.amount-likes-navigation-user {
 .filter-button-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
@@ -601,6 +639,7 @@ a.breadcrumbs-link {
   font-weight: 700;
   line-height: 20px;
   border: none;
+  margin-top: 32px;
 }
 
 .catalog-search-result-title {
