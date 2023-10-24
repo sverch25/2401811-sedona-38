@@ -647,6 +647,7 @@ a.breadcrumbs-link::before{
   text-transform: uppercase;
   display: flex;
   margin-bottom: 40px;
+  align-items: center;
 }
 
 .catalog-search-select-control {
@@ -712,8 +713,14 @@ a.breadcrumbs-link::before{
   background-color: #82B3D3;
   border: none;
   border-radius: 4px;
-  display: inline;
-  padding: 8px 20px;
+  padding: 8px 18px;
+}
+
+.product-button-wrapper {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-between;
 }
 
 .product-card-button-info {
@@ -768,18 +775,22 @@ a.breadcrumbs-link::before{
   margin-right: 6px;
 }
 
-
-
 .button-active-favourite {
   background-color: #7DB54F;
+}
+
+.catalog-divider {
+  content: url("../images/divider-6.svg");
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .pagination {
   display: flex;
   padding: 0;
   margin-bottom: 0;
-  margin-top: 40px;
   gap: 8px;
+  margin-top: 0;
 }
 
 .pagination-link {
