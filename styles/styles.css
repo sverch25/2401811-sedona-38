@@ -693,7 +693,10 @@ a.breadcrumbs-link::before{
 }
 
 .product-card-image {
-  margin-top: 20px;
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .product-price {
