@@ -716,13 +716,6 @@ a.breadcrumbs-link::before{
   padding: 8px 18px;
 }
 
-.product-button-wrapper {
-  display: flex;
-  margin-left: 20px;
-  margin-right: 20px;
-  justify-content: space-between;
-}
-
 .product-card-button-info {
   color: #ffffff;
   font-size: 16px;
