@@ -705,6 +705,14 @@ a.breadcrumbs-link::before{
   margin-bottom: 16px;
   justify-content: space-between;
   margin-right: 20px;
+  width: 300px;
+}
+
+.product-button-container {
+  max-width: 300px;
+  display: flex;
+  margin-left: 20px;
+  justify-content: space-between;
 }
 
 .product-card-button-favourite {
