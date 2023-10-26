@@ -686,33 +686,27 @@ a.breadcrumbs-link::before {
 .product-card-title {
   font-size: 24px;
   line-height: 28px;
-  margin-top: 16px;
+  margin: 0;
   margin-bottom: 16px;
   text-align: start;
-  margin-left: 20px;
 }
 
 .product-card-image {
   vertical-align: middle;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-bottom: 16px;
 }
 
 .product-price {
   display: flex;
-  margin-left: 20px;
   margin-bottom: 16px;
   justify-content: space-between;
-  margin-right: 20px;
   width: 300px;
 }
 
 .product-button-container {
-  max-width: 300px;
   display: flex;
-  margin-left: 20px;
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .product-card-button-favourite {
@@ -740,8 +734,9 @@ a.breadcrumbs-link::before {
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
   padding: 0;
   margin: 0;
   width: 1060px;
@@ -749,10 +744,9 @@ a.breadcrumbs-link::before {
 }
 
 .product-card {
-  width: 340px;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .product-card-button-rating {
@@ -763,15 +757,11 @@ a.breadcrumbs-link::before {
   background-color: #F2F2F2;
   border-radius: 4px;
   padding: 9px 22px 8px 23px;
-  margin-right: 20px;
   margin-left: auto;
 }
 
 .rating-result {
-  margin-top: 16px;
   display: flex;
-  margin-bottom: 20px;
-  margin-left: 20px;
 }
 
 .rating-active {
@@ -791,7 +781,7 @@ a.breadcrumbs-link::before {
 
 .catalog-divider {
   content: url("../images/divider-6.svg");
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
