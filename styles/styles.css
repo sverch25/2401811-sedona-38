@@ -85,6 +85,7 @@ body {
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
+  flex-grow: 1;
 }
 
 li {
@@ -460,50 +461,49 @@ span.amount-likes-navigation-user {
 
 .page-footer {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
+  margin: 0;
   padding-top: 45px;
   padding-bottom: 35px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .footer-social-list {
-  margin-left: 70px;
   display: flex;
-  gap: 20px;
   width: 142px;
   padding-left: 0;
-}
-
-.footer-social-logo {
-  margin-left: auto;
-  margin-right: 70px;
+  margin: 0;
 }
 
 .footer-contacts-phone {
-  width: 720px;
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
   text-transform: uppercase;
+  margin-right: auto;
   margin-left: auto;
+  padding: 5px 194px 5px 195px;
 }
 
-.footer-social-list .footer-social-item-vk::before {
+.footer-social-list .footer-social-item-vk {
   content: url("../images/social-vk.svg");
+  padding: 18px 11.67px 18px 11.67px;
 }
 
-.footer-social-list .footer-social-item-tg::before {
+.footer-social-list .footer-social-item-tg {
   content: url("../images/social-tg.svg");
+  padding: 17px 14.67px 17px 14.67px;
 }
 
-.footer-social-list .footer-social-item-youtube::before {
+.footer-social-list .footer-social-item-youtube {
   content: url("../images/social-youtube.svg");
+  padding: 16.5px 12.67px 16.5px 12.67px;
 }
 
-.footer-social-logo::before {
+.footer-social-logo {
   content: url("../images/footer-logo-academy.svg");
+  padding-top: 8.5px;
+  padding-bottom: 8.6px;
 }
 
 .subscription-form {
