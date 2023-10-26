@@ -94,6 +94,14 @@ body {
   flex-grow: 1;
 }
 
+img {
+  vertical-align: middle;
+}
+
+.page-header-logo {
+  margin-right: 30px;
+}
+
 li {
   list-style-type: none;
   margin: 0;
@@ -103,6 +111,10 @@ li {
 a {
   text-decoration: none;
   color: #000000;
+}
+
+button {
+  font-family: "PT Sans", sans-serif;
 }
 
 .button {
@@ -140,6 +152,7 @@ a {
   padding-left: 12px;
   padding-right: 12px;
   padding-bottom: 22px;
+  padding-top: 22px;
   display: flex;
   margin-right: 20px;
 }
@@ -188,10 +201,8 @@ span.amount-likes-navigation-user {
 
 .advantages-description {
   width: 230px;
-  margin-bottom: 0;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+
 }
 
 .advantages-list li:first-child,
@@ -202,10 +213,22 @@ span.amount-likes-navigation-user {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  height: 385px;
 }
 
 .advantages-wrapper-with-photo {
-  margin: auto;
+  margin: 0;
+  padding: 103px 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages-wrapper {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .reverse {
@@ -219,10 +242,8 @@ span.amount-likes-navigation-user {
   line-height: 28px;
   text-transform: uppercase;
   width: 175px;
-  margin: 0 auto 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0;
+  text-align: center;
 }
 
 .advantages-list li:nth-child(3) {
@@ -238,7 +259,7 @@ span.amount-likes-navigation-user {
   line-height: 28px;
   text-transform: uppercase;
   width: 175px;
-  margin: 0 auto 30px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -264,7 +285,7 @@ span.amount-likes-navigation-user {
   line-height: 28px;
   text-transform: uppercase;
   width: 175px;
-  margin: 0 auto 30px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -275,6 +296,7 @@ span.amount-likes-navigation-user {
   width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.30);
+  margin-bottom: 30px;
   margin-top: 30px;
 }
 
@@ -291,10 +313,12 @@ span.amount-likes-navigation-user {
 
 .advantages-list-service li:first-child::before {
   content: url("../images/advantage-icon-house.svg");
+  margin-bottom: 30px;
 }
 
 .advantages-list-service li:last-child::before {
   content: url("../images/advantage-icon-gift.svg");
+  margin-bottom: 30px;
 }
 
 .advantages-list-service .advantages-item {
@@ -307,8 +331,13 @@ span.amount-likes-navigation-user {
 }
 
 .advantages-list-service .advantages-name {
-  margin: 30px 0;
+  margin: 0;
+  margin-bottom: 30px;
   width: 230px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
 .advantages-list-service .advantages-description {
@@ -364,15 +393,9 @@ span.amount-likes-navigation-user {
   margin: 0;
 }
 
-.advantages-list-service .advantages-name {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  text-transform: uppercase;
-}
-
 .advantages-list-service .advantages-item::before {
   content: url("../images/advantage-icon-burger.svg");
+  margin-bottom: 30px;
 }
 
 .hotel-search {
@@ -479,6 +502,7 @@ span.amount-likes-navigation-user {
   width: 142px;
   padding-left: 0;
   margin: 0;
+  margin-right: auto;
 }
 
 .footer-contacts-phone {
@@ -487,7 +511,6 @@ span.amount-likes-navigation-user {
   line-height: 40px;
   text-transform: uppercase;
   margin-right: auto;
-  margin-left: auto;
   padding: 5px 194px 5px 195px;
 }
 
@@ -521,6 +544,7 @@ span.amount-likes-navigation-user {
   font-weight: 700;
   line-height: 78px;
   margin: 0;
+  margin-bottom: 8px;
   display: flex;
 }
 
@@ -541,6 +565,7 @@ span.amount-likes-navigation-user {
 .catalog-filter-group-infra {
   border: none;
   padding: 0;
+  margin: 0;
   margin-right: 70px;
 }
 
@@ -548,6 +573,8 @@ span.amount-likes-navigation-user {
   border: none;
   padding: 0;
   text-align: left;
+  margin: 0;
+  margin-right: auto;
 }
 
 .catalog-filter-group-price {
@@ -556,20 +583,19 @@ span.amount-likes-navigation-user {
   text-align: left;
   border: none;
   padding: 0;
-  margin-left: auto;
+  margin: 0;
   margin-right: 70px;
 }
 
 .price-min,
 .price-max {
   width: 143px;
-  margin-top: 32px;
+  margin: 0;
 }
 
 .catalog-filter-list {
   padding: 0;
   margin: 0;
-  margin-top: 32px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -602,7 +628,6 @@ a.breadcrumbs-link::before {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-top: 8px;
   margin-bottom: 40px;
 }
 
@@ -615,6 +640,8 @@ a.breadcrumbs-link::before {
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
+  padding: 0;
+  margin-bottom: 32px;
 }
 
 .catalog-filter-item {
@@ -632,6 +659,7 @@ a.breadcrumbs-link::before {
   line-height: 20px;
   border-radius: 4px;
   border: none;
+  margin-bottom: 32px;
 }
 
 .catalog-filter-reset-button {
@@ -643,7 +671,7 @@ a.breadcrumbs-link::before {
   font-weight: 700;
   line-height: 20px;
   border: none;
-  margin-top: 32px;
+  border-radius: 4px;
 }
 
 .catalog-search-result-title {
@@ -656,11 +684,21 @@ a.breadcrumbs-link::before {
   align-items: center;
 }
 
+select.catalog-search-select-control {
+  padding: 14px 20px;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
 .catalog-search-select-control {
   margin-right: 70px;
   width: 292px;
   height: 49px;
   margin-left: auto;
+  border-radius: 4px;
 }
 
 .show-mode-list {
@@ -717,14 +755,15 @@ a.breadcrumbs-link::before {
 
 .product-card-button-favourite {
   color: #ffffff;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
   background-color: #82B3D3;
   border: none;
   border-radius: 4px;
-  padding: 8px 16px;
+  padding: 8px 20px;
+  box-sizing: border-box;
 }
 
 .product-card-button-info {
@@ -737,6 +776,7 @@ a.breadcrumbs-link::before {
   border-radius: 4px;
   background-color: #756157;
   padding: 8px 26px;
+  box-sizing: border-box;
 }
 
 .product-list {
@@ -745,6 +785,7 @@ a.breadcrumbs-link::before {
   gap: 20px;
   padding: 0;
   margin: 0;
+  margin-bottom: 40px;
   width: 1060px;
   justify-content: space-between;
 }
@@ -753,6 +794,7 @@ a.breadcrumbs-link::before {
   border-radius: 4px;
   border: 1px solid #E6E6E6;
   padding: 20px;
+  width: 300px;
 }
 
 .product-card-button-rating {
@@ -777,17 +819,16 @@ a.breadcrumbs-link::before {
 
 .button-active-favourite {
   background-color: #7DB54F;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   border: none;
   border-radius: 4px;
-  padding: 8px 14px;
+  padding: 8px 18px;
 }
 
 .catalog-divider {
   content: url("../images/divider-6.svg");
-  margin-top: 40px;
   margin-bottom: 40px;
 }
 
