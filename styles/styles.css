@@ -46,38 +46,44 @@ body {
 }
 
 .navigation-logo {
-  width: 140px;
-  margin-right: 28px;
-  margin-left: 70px;
-  margin-bottom: -6px;
-  position: relative;
-  z-index: 2;
+  vertical-align: middle;
+  margin-bottom: -12px;
 }
 
 .navigation {
-  width: 1200px;
   margin-top: 0;
+  padding-left: 70px;
+  padding-right: 70px;
   margin-bottom: 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 140px 1fr 1fr;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
-  width: 339px;
+  margin-left: 30px;
   display: flex;
+  margin-right: auto;
+}
+
+.navigation-list .navigation-link {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: block;
+  padding: 20px 16px;
 }
 
 .navigation-user {
-  margin-left: auto;
-  margin-right: 70px;
-  margin-bottom: 14px;
   padding: 0;
+  margin: 0;
   display: flex;
-}
-
-.navigation-list .navigation-item {
-  padding: 20px 16px;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .page-container {
@@ -90,23 +96,13 @@ body {
 
 li {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
   color: #000000;
-}
-
-.navigation-link {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  text-decoration: none;
-  color: inherit;
-  text-transform: capitalize;
-  text-align: center;
-
 }
 
 .button {
@@ -115,7 +111,7 @@ a {
   background-color: #756157;
   text-decoration-line: none;
   font-weight: 700;
-  padding: 8px 50px;
+  padding: 8px 34px;
   border-radius: 4px;
   display: flex;
 }
@@ -128,27 +124,37 @@ a {
 .nav-button {
   font-size: 16px;
   line-height: 20px;
-  margin-left: 20px;
 }
 
-.navigation-search::before {
+.navigation-search {
   content: url("../images/navigation-user-search.svg");
+  display: block;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 22px;
+  padding-top: 22px;
 }
 
-.navigation-favourite::before {
+.navigation-favourite {
   content: url("../images/navigation-user-like.svg");
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 22px;
+  display: flex;
+  margin-right: 20px;
 }
 
 span.amount-likes-navigation-user {
   background-color: #7DB54F;
   border-radius: 10px;
-  text-align: center;
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: 10px;
   color: #fff;
-  text-decoration-line: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .hero {
