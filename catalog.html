@@ -134,8 +134,10 @@
 
         <section class="catalog-search">
           <h2 class="visually-hidden">Результат применённых фильтров</h2>
-          <div class="catalog-search-result-title">
-            <span>Найдено гостиниц: <span>38</span></span>
+          <div class="catalog-search-result-wrapper">
+            <span class="hotels-found">Найдено гостиниц: <span>38</span></span>
+          </div>
+          <div class="catalog-show-mode">
             <select class="catalog-search-select-control" aria-label="Сортировка">
               <option value="popular">Сначала популярное</option>
               <option value="cheap">Сначала дешевые</option>
@@ -160,7 +162,9 @@
               </li>
             </ul>
           </div>
+        </section>
 
+        <section class="catalog-main">
           <ul class="product-list">
             <li class="product-card">
               <a href="#" class="product-card-link">
@@ -264,6 +268,7 @@
             </li>
           </ul>
 
+
           <div class="catalog-divider"></div>
 
           <ul class="pagination">
@@ -286,7 +291,9 @@
               <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
+
         </section>
+
 
         <section class="subscription">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
