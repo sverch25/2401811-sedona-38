@@ -96,6 +96,8 @@ body {
 
 img {
   height: auto;
+  min-width: 100%;
+  vertical-align: middle;
 }
 
 .page-header-logo {
@@ -697,7 +699,6 @@ select.catalog-search-select-control {
   line-height: 21px;
   margin-right: 70px;
   width: 292px;
-  margin-left: auto;
   border-radius: 4px;
   box-sizing: border-box;
 }
