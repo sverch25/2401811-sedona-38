@@ -69,13 +69,26 @@ body {
 
 .navigation-list .navigation-link {
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   text-decoration: none;
   text-transform: capitalize;
   display: block;
   padding: 20px 16px;
+}
+
+.navigation-item {
+  position: relative
+}
+
+.navigation-link-current::before {
+  content: "";
+  position: absolute;
+  right: 16px;
+  bottom: 0;
+  left: 16px;
+  height: 2px;
+  background-color: #756257;
 }
 
 .navigation-user {
@@ -171,7 +184,7 @@ span.amount-likes-navigation-user {
   flex-direction: column;
   justify-content: flex-end;
   position: absolute;
-  z-index: 3;
+  z-index: 10;
 }
 
 .hero {
@@ -427,7 +440,7 @@ span.amount-likes-navigation-user {
 }
 
 .subscription {
-  padding: 96px  15px 104px 15px;
+  padding: 96px 15px 104px 15px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -522,24 +535,37 @@ span.amount-likes-navigation-user {
 }
 
 .footer-social-list .footer-social-item-vk {
-  content: url("../images/social-vk.svg");
+  content: "";
   padding: 18px 11.67px 18px 11.67px;
 }
 
 .footer-social-list .footer-social-item-tg {
-  content: url("../images/social-tg.svg");
+  content: "";
   padding: 17px 14.67px 17px 14.67px;
 }
 
 .footer-social-list .footer-social-item-youtube {
-  content: url("../images/social-youtube.svg");
+  content: "";
   padding: 16.5px 12.67px 16.5px 12.67px;
 }
 
 .footer-social-logo {
-  content: url("../images/footer-logo-academy.svg");
+  content: "";
   padding-top: 8.5px;
   padding-bottom: 8.6px;
+}
+
+.footer-social-logo:hover {
+  fill: #756157;
+}
+
+.footer-social-logo:focus {
+  fill: #756157;
+}
+
+.footer-social-logo:active {
+  fill: #756157;
+  opacity: 30%;
 }
 
 .subscription-form {
@@ -898,4 +924,74 @@ select.catalog-search-select-control {
 .show-list-button {
   content: url("../images/view-mode-icon-spisok.svg");
   padding: 17px 16px;
+}
+
+.nav-button:hover,
+.hotel-search-button:hover,
+.product-card-button-info:hover {
+  background-color: #615048;
+}
+
+.nav-button:focus,
+.hotel-search-button:focus,
+.product-card-button-info:focus {
+  background-color: #615048;
+}
+
+.nav-button:active,
+.hotel-search-button:active,
+.product-card-button-info:active {
+  background-color: #756157;
+  opacity: 30%;
+}
+
+.subscription-button:hover,
+.catalog-filter-button:hover,
+.product-card-button-favourite:hover {
+  background-color: #68A2CA;
+}
+
+.subscription-button:focus,
+.catalog-filter-button:focus,
+.product-card-button-favourite:focus {
+  background-color: #68A2CA;
+}
+
+.subscription-button:active,
+.catalog-filter-button:active,
+.product-card-button-favourite:active {
+  background-color: #82B3D3;
+  opacity: 30%;
+}
+
+.button-active-favourite:hover {
+  background-color: #6C9E42;
+}
+
+.button-active-favourite:focus {
+  background-color: #6C9E42;
+}
+
+.button-active-favourite:active {
+  background-color: #7DB54F;
+  opacity: 30%;
+}
+
+.catalog-filter-reset-button:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 60%;
+}
+
+.catalog-filter-reset-button:focus {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0);
+  border: 3px solid #83B3D3;
+}
+
+.catalog-filter-reset-button:active {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 60%;
+  border: none;
 }
