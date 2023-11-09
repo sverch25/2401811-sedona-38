@@ -75,20 +75,23 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                      Бассейн
+                      <input class="control-input visually-hidden" type="checkbox" name="swimming-pool" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
-                      Парковка
+                      <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">
-                      Wi-Fi
+                      <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -99,20 +102,25 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="housing-group" value="hotel" checked>
-                      Гостиница
+                      <input class="control-input visually-hidden" type="radio" name="housing-group" value="hotel"
+                        checked>
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="housing-group" value="motel">
-                      Мотель
+                      <input class="control-input visually-hidden" type="radio" name="housing-group" value="motel">
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="housing-group" value="appartments">
-                      Апартаменты
+                      <input class="control-input visually-hidden" type="radio" name="housing-group"
+                        value="appartments">
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">Аппартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -120,8 +128,29 @@
 
               <fieldset class="catalog-filter-group-price">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <input class="price-min" placeholder="0 от" type="text" name="price" required>
-                <input class="price-max" placeholder="9000 до" type="text" name="price" required>
+
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    <input class="range-input-min field" type="number" value="0" name="min-price" required>
+                    <span class="price-text from">от</span>
+                  </label>
+                  <label class="catalog-filter-label">
+                    <input class="range-input-max field" type="number" value="9000" name="max-price" required>
+                    <span class="price-text before">до</span>
+                  </label>
+                </div>
+
+                <div class="range-scale">
+                  <div class="range-bar" style="width: 226px">
+                    <button type="button" class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button type="button" class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
+
               </fieldset>
               <div class="filter-button-wrapper">
                 <button class="catalog-filter-button" type="submit">Применить</button>
@@ -188,7 +217,7 @@
                 <span class="rating-active"></span>
                 <span class="rating-active"></span>
                 <span></span>
-                <a class="product-card-button-rating" href="#">Рейтинг: <span>8,5</span></a>
+                <a class="product-card-button-rating">Рейтинг: <span>8,5</span></a>
               </div>
             </li>
             <li class="product-card">
@@ -213,7 +242,7 @@
                 <span class="rating-active"></span>
                 <span class="rating-active"></span>
                 <span></span>
-                <a class="product-card-button-rating" href="#">Рейтинг: <span>9,2</span></a>
+                <a class="product-card-button-rating">Рейтинг: <span>9,2</span></a>
               </div>
             </li>
             <li class="product-card">
@@ -238,7 +267,7 @@
                 <span class="rating-active"></span>
                 <span></span>
                 <span></span>
-                <a class="product-card-button-rating" href="#">Рейтинг: <span>6,9</span></a>
+                <a class="product-card-button-rating">Рейтинг: <span>6,9</span></a>
               </div>
             </li>
             <li class="product-card">
@@ -263,7 +292,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                <a class="product-card-button-rating" href="#">Рейтинг: <span>5,0</span></a>
+                <a class="product-card-button-rating">Рейтинг: <span>5,0</span></a>
               </div>
             </li>
           </ul>
