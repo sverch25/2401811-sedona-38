@@ -57,11 +57,11 @@
           <div class="breadcrumbs-title-wrapper">
             <h1 class="catalog-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
-              <li class="breadcrumbs-item-home">
-                <a class="breadcrumbs-link" hred="index.html"></a>
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link-home" hred="index.html"></a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
+                <a class="breadcrumbs-link-hotels">Гостиницы</a>
               </li>
             </ul>
           </div>
@@ -160,40 +160,40 @@
 
           </form>
         </section>
-
-        <section class="catalog-search">
-          <h2 class="visually-hidden">Результат применённых фильтров</h2>
-          <div class="catalog-search-result-wrapper">
-            <span class="hotels-found">Найдено гостиниц: <span>38</span></span>
-          </div>
-          <div class="catalog-show-mode">
-            <select class="catalog-search-select-control" aria-label="Сортировка">
-              <option value="popular">Сначала популярное</option>
-              <option value="cheap">Сначала дешевые</option>
-              <option value="expensive">Сначала дорогие</option>
-            </select>
-
-            <ul class="show-mode-list">
-              <li class="show-mode-item">
-                <a href="#" class="show-cards-button show-mode-item-current">
-                  <span class="visually-hidden">Показать карточки</span>
-                </a>
-              </li>
-              <li class="show-mode-item">
-                <a href="#" class="show-slides-button">
-                  <span class="visually-hidden">Показать галерею</span>
-                </a>
-              </li>
-              <li class="show-mode-item">
-                <a href="#" class="show-list-button">
-                  <span class="visually-hidden">Показать список</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-
         <section class="catalog-main">
+          <div class="catalog-sort">
+            <h2 class="visually-hidden">Результат применённых фильтров</h2>
+            <div class="catalog-sort-result-wrapper">
+              <span class="hotels-found">Найдено гостиниц: <span>38</span></span>
+            </div>
+            <div class="catalog-show-mode">
+              <select class="catalog-sort-select-control" aria-label="Сортировка">
+                <option value="popular">Сначала популярное</option>
+                <option value="cheap">Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+
+              <ul class="show-mode-list">
+                <li class="show-mode-item">
+                  <a href="#" class="show-cards-button show-mode-item-current">
+                    <span class="visually-hidden">Показать карточки</span>
+                  </a>
+                </li>
+                <li class="show-mode-item">
+                  <a href="#" class="show-slides-button">
+                    <span class="visually-hidden">Показать галерею</span>
+                  </a>
+                </li>
+                <li class="show-mode-item">
+                  <a href="#" class="show-list-button">
+                    <span class="visually-hidden">Показать список</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
           <ul class="product-list">
             <li class="product-card">
               <a href="#" class="product-card-link">
@@ -212,11 +212,23 @@
                 <button class="product-card-button-favourite" type="button">в избранное</button>
               </div>
               <div class="rating-result">
-                <span class="rating-active"></span>
-                <span class="rating-active"></span>
-                <span class="rating-active"></span>
-                <span class="rating-active"></span>
-                <span></span>
+                <ol class="rating-hotels">
+                  <li class="active">
+                    <span class="visually-hidden">1 звезда</span>
+                  </li>
+                  <li class="active">
+                    <span class="visually-hidden">2 звезды</span>
+                  </li>
+                  <li class="active">
+                    <span class="visually-hidden">3 звезды</span>
+                  </li>
+                  <li class="active">
+                    <span class="visually-hidden">4 звезды</span>
+                  </li>
+                  <li class="stars">
+                    <span class="visually-hidden">5 звезд</span>
+                  </li>
+                </ol>
                 <a class="product-card-button-rating">Рейтинг: <span>8,5</span></a>
               </div>
             </li>
@@ -237,11 +249,23 @@
                 <button class="product-card-button-favourite button-active-favourite" type="button">в избранном</button>
               </div>
               <div class="rating-result">
-                <span class="rating-active"></span>
-                <span class="rating-active"></span>
-                <span class="rating-active"></span>
-                <span class="rating-active"></span>
-                <span></span>
+                <ol class="rating-hotels">
+                  <li class="active">
+                    <span class="visually-hidden">1 звезда</span>
+                  </li>
+                  <li class="active">
+                    <span class="visually-hidden">2 звезды</span>
+                  </li>
+                  <li class="active">
+                    <span class="visually-hidden">3 звезды</span>
+                  </li>
+                  <li class="active">
+                    <span class="visually-hidden">4 звезды</span>
+                  </li>
+                  <li class="stars">
+                    <span class="visually-hidden">5 звезд</span>
+                  </li>
+                </ol>
                 <a class="product-card-button-rating">Рейтинг: <span>9,2</span></a>
               </div>
             </li>
@@ -262,11 +286,23 @@
                 <button class="product-card-button-favourite" type="button">в избранное</button>
               </div>
               <div class="rating-result">
-                <span class="rating-active"></span>
-                <span class="rating-active"></span>
-                <span class="rating-active"></span>
-                <span></span>
-                <span></span>
+                <ol class="rating-hotels">
+                  <li class="active">
+                    <span class="visually-hidden">1 звезда</span>
+                  </li>
+                  <li class="active">
+                    <span class="visually-hidden">2 звезды</span>
+                  </li>
+                  <li class="active">
+                    <span class="visually-hidden">3 звезды</span>
+                  </li>
+                  <li class="stars">
+                    <span class="visually-hidden">4 звезды</span>
+                  </li>
+                  <li class="stars">
+                    <span class="visually-hidden">5 звезд</span>
+                  </li>
+                </ol>
                 <a class="product-card-button-rating">Рейтинг: <span>6,9</span></a>
               </div>
             </li>
@@ -287,11 +323,23 @@
                 <button class="product-card-button-favourite" type="button">в избранное</button>
               </div>
               <div class="rating-result">
-                <span class="rating-active"></span>
-                <span class="rating-active"></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <ol class="rating-hotels">
+                  <li class="active">
+                    <span class="visually-hidden">1 звезда</span>
+                  </li>
+                  <li class="active">
+                    <span class="visually-hidden">2 звезды</span>
+                  </li>
+                  <li class="stars">
+                    <span class="visually-hidden">3 звезды</span>
+                  </li>
+                  <li class="stars">
+                    <span class="visually-hidden">4 звезды</span>
+                  </li>
+                  <li class="stars">
+                    <span class="visually-hidden">5 звезд</span>
+                  </li>
+                </ol>
                 <a class="product-card-button-rating">Рейтинг: <span>5,0</span></a>
               </div>
             </li>
