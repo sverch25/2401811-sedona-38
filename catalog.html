@@ -9,7 +9,7 @@
 
   <body>
     <div class="page-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
 
           <a class="navigation-logo" href="index.html">
@@ -51,7 +51,7 @@
         </nav>
       </header>
 
-      <main class="main-inner">
+      <main class="main-inner" data-test="main">
 
         <section class="catalog-filter">
           <div class="breadcrumbs-title-wrapper">
@@ -66,8 +66,9 @@
             </ul>
           </div>
 
+
           <h2 class="visually-hidden">Блок с фильтрами для гостиниц</h2>
-          <div class="filter-wrapper">
+          <div class="filter-wrapper" data-test="filter">
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
 
               <fieldset class="catalog-filter-group-infra">
@@ -157,10 +158,9 @@
                 <button class="catalog-filter-reset-button" type="submit">Сбросить</button>
               </div>
           </div>
-
           </form>
         </section>
-        <section class="catalog-main">
+        <section class="catalog-main" data-test="catalog">
           <div class="catalog-sort">
             <h2 class="visually-hidden">Результат применённых фильтров</h2>
             <div class="catalog-sort-result-wrapper">
@@ -371,7 +371,7 @@
         </section>
 
 
-        <section class="subscription">
+        <section class="subscription" data-test="subscribe">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">

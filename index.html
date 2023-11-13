@@ -9,7 +9,7 @@
 
   <body>
     <div class="page-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
 
           <a class="navigation-logo" href="#">
@@ -50,14 +50,14 @@
           </ul>
         </nav>
       </header>
-      <main class="main-page">
-        <section class="hero">
+      <main class="main-page" data-test="main">
+        <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Сайт города Седона</h1>
           <img class="hero-image" src="./images/welcome.svg"
             alt="Welcome to the gorgeous Sedona, because the grand canyon sucks!" width="458" height="352">
         </section>
 
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества города Седона</h2>
           <div class="advantages-text-wrapper">
             <p class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -97,7 +97,10 @@
               <img src="./images/advantages-photo-2.jpg" width="800" height="385" alt="Каньон в Седоне">
             </li>
           </ul>
-          <div class="advantages-services-text-wrapper">
+        </section>
+
+        <section class="services" data-test="service">
+          <div class="advantages-services-text-wrapper" data-test="service">
             <p class="advantages-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
             <p class="advantages-text">Опытный персонал и качественное обслуживание!</p>
           </div>
@@ -118,7 +121,8 @@
           </ul>
         </section>
 
-        <section class="hotel-search">
+
+        <section class="hotel-search" data-test="search">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <span class="hotel-search-title">Заинтересовались?</span>
           <p class="hotel-search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
@@ -126,7 +130,7 @@
           <a class="button hotel-search-button" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         </section>
 
-        <section class="subscription subscription-theme-custom">
+        <section class="subscription subscription-theme-custom" data-test="subscribe">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
