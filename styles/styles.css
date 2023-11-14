@@ -16,10 +16,6 @@
   font-display: swap;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -30,6 +26,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 
 html {
   height: 100%;
@@ -68,6 +65,7 @@ body {
   padding: 0;
   display: flex;
   margin-right: auto;
+  list-style-type: none;
 }
 
 .navigation-list .navigation-link {
@@ -108,6 +106,7 @@ body {
   margin: 0;
   display: flex;
   align-items: center;
+  list-style-type: none;
 }
 
 .page-container {
@@ -118,23 +117,12 @@ body {
   flex-grow: 1;
 }
 
-img {
-  height: auto;
-  vertical-align: middle;
-}
-
-li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
+body a {
   text-decoration: none;
   color: #000000;
 }
 
-button {
+body button {
   font-family: "PT Sans", sans-serif;
 }
 
@@ -190,6 +178,7 @@ button {
   line-height: 10px;
   width: 20px;
   height: 20px;
+  box-sizing: border-box;
 }
 
 .hero {
@@ -236,6 +225,7 @@ button {
   justify-content: space-between;
   padding: 0;
   height: 385px;
+  box-sizing: border-box;
 }
 
 .advantages-wrapper-with-photo {
@@ -257,24 +247,15 @@ button {
   flex-direction: row-reverse;
 }
 
-.advantages-list li:first-child .advantages-name,
-.advantages-list li:last-child .advantages-name {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  text-transform: uppercase;
-  width: 175px;
-  margin: 0;
-}
-
 .advantages-list li:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.20);
   padding: 112.5px 85px;
   width: 400px;
   text-align: center;
+  box-sizing: border-box;
 }
 
-.advantages-list li:nth-child(3) .advantages-name {
+.advantages-name-light-blue {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -291,6 +272,7 @@ button {
   margin: 0;
   flex-wrap: wrap;
   display: flex;
+  list-style-type: none;
 }
 
 .advantages-list .advantages-item {
@@ -298,6 +280,7 @@ button {
   padding: 112.5px 85px;
   text-align: center;
   width: 400px;
+  box-sizing: border-box;
 }
 
 .advantages-list .advantages-name {
@@ -336,6 +319,15 @@ button {
   margin-top: 30px;
 }
 
+.advantages-name-light-blue::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.30);
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
 .advantages-list .advantages-name::after {
   content: "";
   width: 60px;
@@ -352,6 +344,7 @@ button {
   width: 400px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .advantages-list-service li:first-child::before {
@@ -370,6 +363,7 @@ button {
   width: 400px;
   height: 385px;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .advantages-list-service .advantages-name {
@@ -433,6 +427,7 @@ button {
   justify-content: center;
   padding-left: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 .advantages-list-service .advantages-item::before {
@@ -507,7 +502,7 @@ button {
   border: none;
   border-top-left-radius: 4px;
   border-end-start-radius: 4px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -551,6 +546,7 @@ button {
   width: 142px;
   padding-left: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 .footer-contacts-phone {
@@ -617,6 +613,8 @@ button {
   color: #fff;
   padding: 35px 70px 70px 70px;
   height: 412px;
+  box-sizing: border-box;
+  list-style-type: none;
 }
 
 .catalog-filter-form {
@@ -690,7 +688,7 @@ button {
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
   width: 86px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -704,7 +702,7 @@ button {
   padding: 12px 20px;
   box-sizing: border-box;
   width: 86px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -726,7 +724,7 @@ button {
 }
 
 .control-label {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -802,6 +800,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  list-style-type: none;
 }
 
 .catalog-filter-label {
@@ -856,6 +855,7 @@ a.breadcrumbs-link-hotels::before {
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+  list-style-type: none;
 }
 
 .breadcrumbs-link:hover {
@@ -961,6 +961,7 @@ select.catalog-sort-select-control {
   margin: 0;
   display: flex;
   gap: 8px;
+  list-style-type: none;
 }
 
 .show-cards-button,
@@ -973,6 +974,7 @@ select.catalog-sort-select-control {
   border-radius: 4px;
   width: 48px;
   height: 48px;
+  box-sizing: border-box;
 }
 
 .show-cards-button:hover,
@@ -1075,6 +1077,7 @@ select.catalog-sort-select-control {
   margin: 0;
   margin-bottom: 40px;
   width: 1060px;
+  list-style-type: none;
 }
 
 .product-card {
@@ -1107,6 +1110,7 @@ select.catalog-sort-select-control {
   margin: 0;
   padding: 0;
   gap: 6px;
+  list-style-type: none;
 }
 
 .active {
@@ -1384,6 +1388,7 @@ select.catalog-sort-select-control {
   background-image: url("../images/modal-close.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  box-sizing: border-box;
 }
 
 .modal-title {
@@ -1397,6 +1402,7 @@ select.catalog-sort-select-control {
   text-transform: uppercase;
   text-align: start;
   max-width: 450px;
+  box-sizing: border-box;
 }
 
 .modal-close-button:hover {
@@ -1416,6 +1422,7 @@ select.catalog-sort-select-control {
   margin-left: 137px;
   margin-bottom: 23px;
   text-align: start;
+  box-sizing: border-box;
 }
 
 .info-error {
@@ -1437,27 +1444,32 @@ select.catalog-sort-select-control {
   text-transform: uppercase;
   cursor: pointer;
   background: #83B3D3;
+  box-sizing: border-box;
 }
 
 .modal-container-close {
   display: none;
+  box-sizing: border-box;
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .search-form-date {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .field-group {
   margin: 0;
   padding: 0;
   margin-bottom: 4px;
+  box-sizing: border-box;
 }
 
 .form-label {
@@ -1465,6 +1477,7 @@ select.catalog-sort-select-control {
   font-weight: 700;
   line-height: 24px;
   color: #000000;
+  box-sizing: border-box;
 }
 
 .button-quantity-plus {
@@ -1477,6 +1490,7 @@ select.catalog-sort-select-control {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   display: flex;
+  box-sizing: border-box;
 }
 
 .button-quantity-minus {
@@ -1489,6 +1503,7 @@ select.catalog-sort-select-control {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   display: flex;
+  box-sizing: border-box;
 }
 
 .button-quantity-wrapper {
@@ -1499,33 +1514,19 @@ select.catalog-sort-select-control {
   box-sizing: border-box;
 }
 
-.button-condition {
-  fill: rgba(117, 97, 87, 0.3);
-  padding: 3px 3px;
-}
-
-.button-condition:hover {
-  fill: rgba(0, 0, 0, 1);
-}
-
-.button-quantity:focus .button-condition path {
-  fill: rgba(0, 0, 0, 1);
-}
-
-.button-quantity:active .button-condition path {
-  fill: rgba(117, 97, 87, 0.3);
-}
-
 .less {
   border-radius: 4px 0 0 4px;
+  box-sizing: border-box;
 }
 
 .more {
   border-radius: 0 4px 4px 0;
+  box-sizing: border-box;
 }
 
 .position-less {
   padding: 9px 3px;
+  box-sizing: border-box;
 }
 
 .field-date {
@@ -1543,6 +1544,7 @@ select.catalog-sort-select-control {
   height: 48px;
   font-family: inherit;
   font-size: 18px;
+  box-sizing: border-box;
 }
 
 .field-date:hover {
@@ -1565,6 +1567,7 @@ select.catalog-sort-select-control {
   background-color: #f2f2f2;
   font-family: inherit;
   font-size: 18px;
+  box-sizing: border-box;
 }
 
 input::-webkit-outer-spin-button,
