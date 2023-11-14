@@ -466,7 +466,8 @@ button {
 }
 
 .subscription {
-  padding: 96px 15px 104px 15px;
+  padding-top: 96px;
+  padding-bottom: 104px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -615,6 +616,7 @@ button {
   background-color: #000;
   color: #fff;
   padding: 35px 70px 70px 70px;
+  height: 412px;
 }
 
 .catalog-filter-form {
@@ -674,11 +676,11 @@ button {
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -3px;
 }
 
 .range-wrapper-inputs {
-  margin-bottom: 36px;
+  margin-bottom: 42px;
   display: flex;
   gap: 2px;
 }
@@ -778,7 +780,8 @@ button {
   border: none;
   border-radius: 50%;
   background-color: #fff;
-  top: 1.5px;
+  top: -0.5px;
+  left: 3px;
   box-sizing: border-box;
 }
 
@@ -873,7 +876,7 @@ a.breadcrumbs-link-hotels::before {
   line-height: 24px;
   text-transform: capitalize;
   padding: 0;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .catalog-filter-item {
@@ -891,13 +894,13 @@ a.breadcrumbs-link-hotels::before {
   line-height: 20px;
   border-radius: 4px;
   border: none;
-  margin-bottom: 29px;
+  margin-bottom: 34px;
   box-sizing: border-box;
   width: 191px;
 }
 
 .catalog-filter-reset-button {
-  padding: 8px 50px;
+  padding: 6px 50px;
   background-color: transparent;
   color: #fff;
   text-transform: uppercase;
@@ -926,7 +929,7 @@ a.breadcrumbs-link-hotels::before {
 }
 
 select.catalog-sort-select-control {
-  margin-right: 70px;
+  margin-right: 69px;
   width: 292px;
   height: 49px;
   padding: 10px 20px;
@@ -944,7 +947,7 @@ select.catalog-sort-select-control {
   -webkit-appearance: none;
   background-image: url(../images/arrow.svg);
   background-repeat: no-repeat;
-  background-position: 252px 50%;
+  background-position: 255px 50%;
   cursor: pointer;
 }
 
@@ -968,6 +971,8 @@ select.catalog-sort-select-control {
   background-color: #FFF;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  width: 48px;
+  height: 48px;
 }
 
 .show-cards-button:hover,
@@ -1057,8 +1062,8 @@ select.catalog-sort-select-control {
 
 .catalog-main {
   margin: 0;
-  padding: 50px 70px 60px 70px;
-  width: 1200px;
+  padding: 49px 70px 60px 70px;
+  width: 1201px;
   box-sizing: border-box;
 }
 
@@ -1076,7 +1081,7 @@ select.catalog-sort-select-control {
   border-radius: 4px;
   border: 1px solid #E6E6E6;
   padding: 20px;
-  width: 340px;
+  width: 341px;
   box-sizing: border-box;
 }
 
@@ -1337,6 +1342,7 @@ select.catalog-sort-select-control {
   padding: 0;
   position: relative;
   display: block;
+  top: 0;
 }
 
 .modal-container {
