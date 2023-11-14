@@ -894,13 +894,13 @@ a.breadcrumbs-link-hotels::before {
   line-height: 20px;
   border-radius: 4px;
   border: none;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
   box-sizing: border-box;
   width: 191px;
 }
 
 .catalog-filter-reset-button {
-  padding: 6px 50px;
+  padding: 4px 50px;
   background-color: transparent;
   color: #fff;
   text-transform: uppercase;
@@ -929,7 +929,7 @@ a.breadcrumbs-link-hotels::before {
 }
 
 select.catalog-sort-select-control {
-  margin-right: 69px;
+  margin-right: 70px;
   width: 292px;
   height: 49px;
   padding: 10px 20px;
@@ -1342,7 +1342,7 @@ select.catalog-sort-select-control {
   padding: 0;
   position: relative;
   display: block;
-  top: 0;
+  top: 3px;
 }
 
 .modal-container {
