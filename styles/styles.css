@@ -790,12 +790,12 @@ body button {
   opacity: 0.6;
 }
 
-.control-input:focus + .control-mark {
+.control-input:focus-visible + .control-mark {
   border-radius: 4px;
   border: 3px solid #83B3D3;
 }
 
-.control-input:focus + .control-mark-radio {
+.control-input:focus-visible + .control-mark-radio {
   border: 3px solid #83B3D3;
 }
 
@@ -947,7 +947,7 @@ a.breadcrumbs-link-hotels::before {
   line-height: 20px;
   border-radius: 4px;
   border: none;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   box-sizing: border-box;
   width: 191px;
 }
@@ -965,7 +965,7 @@ a.breadcrumbs-link-hotels::before {
   box-sizing: border-box;
   width: 191px;
   text-align: center;
-  max-height: 36px;
+  min-height: 36px;
 }
 
 .catalog-sort-result-wrapper {
@@ -1714,6 +1714,7 @@ input[type="number"] {
   height: 143px;
   font-weight: 400;
   text-align: start;
+  box-sizing: border-box;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
