@@ -888,7 +888,7 @@ a.breadcrumbs-link-hotels {
 }
 
 a.breadcrumbs-link-hotels::before {
-  content: url("../images/vector.svg");
+  content: url("");
   margin-right: 10px;
 }
 
