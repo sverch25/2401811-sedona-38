@@ -131,6 +131,11 @@ body {
   fill: #756157;
 }
 
+.navigation-search:active .search-icon,
+.navigation-favourite:active .favourites-icon {
+  opacity: 0.3;
+}
+
 .navigation-favourite:hover .favourites-icon,
 .navigation-favourite:focus .favourites-icon {
   fill: #756157;
@@ -888,7 +893,7 @@ a.breadcrumbs-link-hotels {
 }
 
 a.breadcrumbs-link-hotels::before {
-  content: url("");
+  content: url("../images/vector.svg");
   margin-right: 10px;
 }
 
