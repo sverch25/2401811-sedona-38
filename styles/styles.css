@@ -806,7 +806,7 @@ body button {
 .control-input[type="checkbox"]:checked + .control-mark {
   background-image: url("../images/checkbox.svg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: auto auto;
 }
 
 .control-mark {
